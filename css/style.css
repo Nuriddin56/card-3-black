@@ -1,0 +1,90 @@
+@import "./normalize.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  line-height: 150%;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.card {
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 384px;
+}
+
+.card__image {
+  margin-bottom: 24px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card__title {
+  font-size: 24px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+.card__subtitle {
+  color: #c4f82a;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.card_description {
+  margin-bottom: 24px;
+}
+.card__navlist {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card__navlist__link {
+  display: block;
+  padding-top: 12px;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #c4f82a;
+    color: #333333;
+  }
+}
